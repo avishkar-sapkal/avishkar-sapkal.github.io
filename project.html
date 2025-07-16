@@ -18,12 +18,12 @@
             background-color: #0d6efd;
             border-radius: 10px;
             padding: 20px;
-            min-height: 250px;
+            min-height: 500px;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            
+
         }
 
         .project-box:hover {
@@ -32,18 +32,18 @@
         }
 
         .project-title {
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             font-weight: 600;
             margin-bottom: 5px;
         }
 
         .project-tech {
-            font-size: 4rem;
+            font-size: 1.4rem;
             margin-bottom: 10px;
         }
 
         .project-features {
-            font-size: 0.9rem;
+            font-size: 1.1rem;
         }
 
         .project-features ul {
@@ -67,7 +67,7 @@
 
         <div class="row g-4">
             <!-- Box 1 -->
-            <div class="col-md-4">
+            <div class="col-md-4 h-100">
                 <div class="project-box bg-success">
                     <div>
                         <div class="project-title">KalaGuru by Ira Rangoli Art</div>
@@ -76,10 +76,15 @@
                     <div class="project-features">
                         <strong>Key Features:</strong>
                         <ul>
-                            <li>JWT Auth & Role-Based Access</li>
-                            <li>Assessment Upload with API</li>
-                            <li>Teacher Rating Panel</li>
-                            <li>Certificate Download System</li>
+                            <li>Developed JWT-based Authentication & Role-Based Access Control using Angular Route
+                                Guards for Student, Teacher, and Admin portals.</li>
+                            <li>Built Student Assessment Submission Module with file upload support using FormData and
+                                API integration.</li>
+                            <li>Designed Teacher Dashboard to manage assigned student assessments and submit ratings on
+                                a scale of 1 to 5.</li>
+                            <li>Implemented Certificate Generation and Download Feature after successful assessment
+                                completion.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -95,9 +100,13 @@
                     <div class="project-features">
                         <strong>Key Features:</strong>
                         <ul>
-                            <li>Real-time Slot Booking</li>
-                            <li>Admin Dashboard</li>
-                            <li>Email Notifications with Nodemailer</li>
+                            <li>Built Car Washing Slot Booking Module with real-time availability check, booking
+                                confirmation, and email notification system.</li>
+                            <li>Designed Admin Dashboard for booking management, slot tracking, and user access control
+                                using Angular and NestJS.</li>
+                            <li>Integrated Email Service using Nodemailer to send booking confirmations with payment
+                                links.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -113,9 +122,13 @@
                     <div class="project-features">
                         <strong>Key Features:</strong>
                         <ul>
-                            <li>Product Catalog & Categories</li>
-                            <li>Add to Cart & Checkout</li>
-                            <li>Order History & Profile</li>
+                            <li>Designed a Product Catalog with Categories showcasing 100% Ayurvedic Medicines.</li>
+                            <li>Integrated Add to Cart, Checkout, and Order Placement functionalities similar to
+                                standard e-commerce platforms.</li>
+                            <li>Built a Dynamic Cart Management System with real-time item updates and quantity
+                                adjustments.</li>
+                            <li>Developed Order History and User Profile Management features for tracking past orders.
+                            </li>
                         </ul>
                     </div>
                 </div>
