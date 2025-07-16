@@ -2,121 +2,110 @@
 <html lang="en">
 
 <head>
-    <title>About-Me</title>
+    <title>About Me - Avishkar Sapkal</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #001824;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .heading p {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .heading hr {
+            border-color: #ffc107;
+            width: 150px;
+            margin: 10px auto;
+        }
+
+        .profile-card {
+            background-color: #012a3a;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: scale(1.02);
+        }
+
+        .profile-img {
+            width: 95%;
+            height: auto;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        blockquote {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-top: 20px;
+        }
+
+        .btn-warning {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .profile-img {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #001824;
-        color: white;
-
-    }
-
-    img {
-        width: 500px;
-        height: 500px;
-        border-radius: 30px;
-        float: left;
-    }
-
-   hr{
-    color: white;
-    
-   }
-
-    .text {
-        border-color: white;
-        padding-top: 40px;
-    }
-
-    blockquote {
-        font-size: 20px;
-    }
-    .heading{
-        /* display: flex;
-        justify-content: space-around; */
-        font-size: xx-large; 
-        font-weight: 800;
-        text-align: center;
-        
-        
-    }
-    
-</style>
 
 <body>
-    <div class="container mt-5 ">
-        <div class="heading ">
-            <p style="letter-spacing: 3px; text-transform: uppercase;">Avishkar Sapkal</p>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="heading text-white">
+            <p style="text-transform: uppercase; font-size: 32px; font-weight: 700;">Avishkar Sapkal</p>
             <hr>
-            <p><span>Birth of Date:</span> 14/11/2003</p>
-            <hr>
-            <p><span>Location:</span> Pune, Maharashtra</p>
-            <hr>
+            <p><strong>Date of Birth:</strong> 14/11/2003</p>
+            <p><strong>Location:</strong> Pune, Maharashtra</p>
         </div>
-        <!-- <div  class="card ">
-            <img class="card-img-top " src="profile1.jpg" alt="Card image" style="width:100%">
-            <div class="card-img  ">
-                <p class="card-text display-6 text-white">Hey....!
-                <blockquote class="text-black" >My name is Avishkar Ramesh Sapkal. I'm a web developer currently pursing
-                    my Btech Degree in
-                    CSE at Tatyasaheb Kore Institute of Engineering and Technology
-                    I have completed my 10th from Army Public School Khadakwasla Pune and 12th from Abhasaheb Garware
-                    Pune.
-                    My passion is I love playing and watching Cricket, I like to travel new places and love to capture
-                    pictures.<br>
-                    Click to watch some glimpse</blockquote>
-                </p>
-                <a href="#" class="btn btn-warning">View Photo</a>
+
+        <!-- About Section -->
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <img src="profile11.jpg" alt="Profile" class="profile-img">
             </div>
-        </div> -->
-        <!-- <div class="container">
-            <div class="myimg">
-                <img src="profile1.jpg" alt="profile">
-            </div>
-            <div class="text">
-                <p class="display-6 text-white">Hey....!
-                <blockquote class="text-white" >My name is Avishkar Ramesh Sapkal. I'm a web developer currently pursing
-                    my Btech Degree in
-                    CSE at Tatyasaheb Kore Institute of Engineering and Technology
-                    I have completed my 10th from Army Public School Khadakwasla Pune and 12th from Abhasaheb Garware
-                    Pune.
-                    My passion is I love playing and watching Cricket, I like to travel new places and love to capture
-                    pictures.<br>
-                    Click to watch some glimpse</blockquote>
-                </p>
-                <a href="#" class="btn btn-warning">View Photo</a>
-            </div>
-        </div> -->
-        <div class="row mt-5">
-            <div class="col">
-                <div class="myimg">
-                    <img src="profile11.jpg" alt="profile">
-                </div>
-            </div>
-            <div class="col ">
-                <div class="text">
-                    <p class="display-6 text-white"><b>Hey....! </b>
-                    <blockquote class="text-white">My name is Avishkar Ramesh Sapkal.<br> I'm a web developer currently
-                        pursing my Btech Degree in CSE at Tatyasaheb Kore Institute of Engineering and Technology
-                        I have completed my 10th from Army Public School Khadakwasla Pune and 12th from Abhasaheb
-                        Garware Pune. My passion is I love playing and watching Cricket, I like to travel new places and love to
-                        capture pictures.<br>
-                        Click to watch some glimpse</blockquote>
-                    </p>
+            <div class="col-md-6">
+                <div class="profile-card text-white">
+                    <h2 class="mb-3">Hey...!</h2>
+                    <blockquote>
+                        My name is <strong>Avishkar Ramesh Sapkal</strong>.<br>
+                        I'm a passionate Software Developer with a B.Tech degree in Computer Science from
+                        <strong>Tatyasaheb Kore Institute of Engineering and Technology</strong>.
+                        I completed my 10th from <strong>Army Public School, Khadakwasla, Pune</strong> and 12th from
+                        <strong>Abasaheb Garware College, Pune</strong>.
+                        I'm deeply interested in building intuitive web applications and constantly learning new
+                        technologies.
+                        Beyond coding, I’m an avid cricket enthusiast — I love playing and watching the game. I also
+                        enjoy traveling to new places and capturing beautiful moments through photography.<br><br>
+                        <em>Click below to watch some glimpses of my journey!</em>
+                    </blockquote>
                     <a href="#" class="btn btn-warning">View Photo</a>
                 </div>
             </div>
         </div>
     </div>
-
 
 </body>
 
